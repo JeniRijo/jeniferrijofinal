@@ -1,0 +1,136 @@
+/*ATRIBUTOS GLOBALES*/
+*{
+	font-family:monospace;
+	margin:0;
+	padding:0;
+}
+a {
+	color:#000; 
+	text-decoration:none;
+}
+/*CONTENIDO DEL CUERPO: ANCHO, MARGENES, ETC*/
+
+#Cabecera, #Menu, #Pie, #Cuerpo
+{
+ 	width:1024px;
+ 	margin:auto;
+ 	padding:3px;
+}
+#Contencabecera, #Contenpie, #Cuerpo
+{
+	width:100%;
+/*IMAGEN DE FONDO*/
+}
+.fondo {
+	background-image: url(../imagenes/10.jpg);
+	background-repeat: no-repeat;
+	width:100%;
+	height:100%;
+}
+/* CABECERA: COLOR,OPACIDAD, ETC*/
+#Cabecera
+{
+ 	height: 80px;
+ 	background:#fff;
+ 	/*opacity:0.6;*/
+}
+#Contenido
+{
+	min-height:450px;
+	padding:3px;
+	box-sizing: border-box; /*Evitar que el padding agrande la anchura de un elemento*/
+}
+/* LOGO (CABECERA)*/
+#Contencabecera{
+
+	max-height:90px;
+	background:#fff;
+	opacity:0.8;
+}
+
+
+
+img{
+display:block;
+margin:left;
+padding-top:30px;
+}
+/*BARRA MENU*/
+
+#Contenpie
+{
+	padding-bottom:30px;
+	max-height: 10px;
+	background:#fff;
+}
+/* CONTENIDO DE LA BARRA DE MENU */
+
+#Menu
+{
+	max-height:50px;
+ 	padding-top:0px;
+ 	font-size:17px;
+ 	font-weight:bold;
+    word-spacing:10pt;
+    text-align:right;
+
+ }
+#Menu a{
+	color:#000;
+}
+/* BARRA COPYRIGHT */
+#Pie
+{
+ 	
+ 	height: 50px;
+ 	background:#fff;
+ 	clear:both;
+ 	
+}
+/* RELLENO DEL CONTENIDO: TAMAÑO, IMAGEN DE FONDO, POSICION, ETC */
+#Contenido
+{
+	min-height:450px;
+	background:none;
+	width:100%;
+	float:left;
+}
+
+/*FIN DEL INDEX*/
+/*HISTORIA*/
+.con{
+	width:1024px;
+	text-align: center;
+}
+.formulario {
+	border: 1px solid gray;
+	margin: 15px 0;
+	padding: 20px 0;
+	text-align: center;
+	background:#000;
+	opacity:0.85;
+	margin: 0 auto;
+}
+.letrero{
+	font-size:50px;
+	color:#fff;
+}
+.parhisto{
+	color:#fff;
+	padding-top:30px;
+	padding-left:450px;
+	padding-right:50px;
+	text-align:left;
+
+}
+.mario img{
+
+	float:left;
+	width:375px;
+	height:563px;
+	padding-left:40px;
+}
+.diana{
+	left:50%;
+	top:50%;
+}

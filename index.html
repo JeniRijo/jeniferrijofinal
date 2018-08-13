@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mario Testino</title>
+	<meta charset="UTF-8">
+	<link href="css/icon.css" rel="stylesheet" type="text/css">
+
+	<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+</head>
+<style>
+
+		.carousel {
+			height: 100vh;
+    
+}
+			
+		</style>
+
+<header id="Cabecera" class="opacidad">
+	
+		<div>
+
+				<nav>
+						<div class="nav-wrapper white">
+								<img src="imagenes/15.png" id="imLogo" style='width:215px;margin-left:2%;margin-top:18px;'>
+								 <!--  el sidenav trigger aparece solo cuando es una resolucion para dispositivos mobiles y material icons es una clase de iconos basados en fuentes-->
+						  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black;">menu</i></a>
+						  <ul class="right hide-on-med-and-down">
+							 <!--  cada li representa un elemento a presentar en el navbar y la clase black text de materialize pone la fuente en negro-->
+							 <li ><a href="index.html" class="black-text"> INICIO	</a></li>
+							 <li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+							 <li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+							 <li><a href="filmes.html" class="black-text"> FILMES </a></li>
+							 <li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+							 <li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+							 <li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+						  </ul>
+						</div>
+					  </nav>
+					
+					  <ul class="sidenav" id="mobile-demo">
+						   <!--  cada li representa un elemento a presentar en el navbar cuando es mobil y la clase black text de materialize pone la fuente en negro-->
+						   <li ><a href="index.html" class="black-text"> INICIO	</a></li>
+						   <li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+						   <li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+						   <li><a href="filmes.html" class="black-text"> FILMES </a></li>
+						   <li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+						   <li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+						   <li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+					  </ul>
+					
+
+
+		</div>
+	</header>
+<body class="fondo">
+
+	
+
+
+<!--la clase carrousel es una clase de materialize 	que es utilizada para introducir imagenes en el y luego cambiarlas por el orden introducido-->
+<!--la clase carrousel item representa cada uno de los elementos de el carrousel para asi presentarlos y manipularlos de mejor manera en el js-->
+<div class="carousel  carousel-slider" id='galeria'>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/39.jpg"></a>
+		<a class="carousel-item" ><img  id='imgcarrousel' src="imagenes/2.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/3.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/4.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/5.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/6.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/7.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/8.jpg"></a>
+		<a class="carousel-item" ><img  id='imgcarrousel' src="imagenes/9.jpg"></a>
+		<a class="carousel-item" ><img id='imgcarrousel' src="imagenes/10.jpg"></a>
+	
+	  </div>
+</body>
+
+
+
+
+</html>
+
+<script src='js/materialize.min.js'></script>
+<script>
+	/////////////opciones es un objeto el cual controlara luego el comportamiento de el carrusel
+var opciones={
+	
+	fullWidth:true,
+	padding:0,
+	numVisible:1,
+	indicators:true
+}
+
+////////////////////////////instance2 es la instancia que luego sera utilizada y el m.carrousel.init inicializa el carrousel
+////////////////////////////y a demas devuelve un objeto para luego manipular el comportamiento de el carrousel
+ var instances2;
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems2 = document.getElementById("galeria")
+     instances2 = M.Carousel.init(elems2,opciones);
+	
+  });
+  //////////////////se encarga de inicializar el componente de el menu hamburguer para que cuando se presione el boton salga el menu 
+//////////////////el evento domcontentloaded pasa cuando se cargan todos los elmentos dom instances es la instancia de el elemento sidenav ya inicializada
+//////////////////el metodo init inicializa el sidenav en ese elemento basicamente vincula el js de materialize con el html
+///////////////// el document.querry selectorall selecciona todas los elementos con ese nombre de clase
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+////////////////////////////el set interval ejecuta el metodo introducido cada intervalo en este caso 3 segundos(3000 milisegundos)
+////////////////////////////el instance2 es la instancia de el carrousel y este metodo next() pasa a la siguiente imagen de el carrousel
+////////////////////////////el window.resizeTo se encarga de redimencionar el tama;o de la pagina en la ventana este metodo lo uso para refrescar el tama;o de el carrousel
+  setInterval(function(){ instances2.next();
+	window.resizeTo(screen.width,screen.height);
+
+  },3000)
+ 
+</script>
+

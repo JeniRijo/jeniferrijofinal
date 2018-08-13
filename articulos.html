@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Mario Testino - Articulos</title>
+	<meta charset="UTF-8">
+	<link href="css/icon.css" rel="stylesheet" type="text/css">
+
+	<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+	<section id="Cuerpo">
+		<section id="Contencabecera">
+			<header id="Cabecera" class="opacidad">
+
+				<div>
+
+					<nav>
+						<div class="nav-wrapper white">
+							<img src="imagenes/15.png" id="imLogo" style='width:215px;margin-left:2%;margin-top:18px;'>
+							<!--  el sidenav trigger aparece solo cuando es una resolucion para dispositivos mobiles y material icons es una clase de iconos basados en fuentes-->
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+								<i class="material-icons" style="color:black;">menu</i>
+							</a>
+							<ul class="right hide-on-med-and-down">
+								<!--  cada li representa un elemento a presentar en el navbar y la clase black text de materialize pone la fuente en negro-->
+								<li ><a href="index.html" class="black-text"> INICIO	</a></li>
+										<li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+										<li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+										<li><a href="filmes.html" class="black-text"> FILMES </a></li>
+										<li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+										<li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+										<li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+							</ul>
+						</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+						<!--  cada li representa un elemento a presentar en el navbar cuando es mobil y la clase black text de materialize pone la fuente en negro-->
+						<li ><a href="index.html" class="black-text"> INICIO	</a></li>
+						<li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+						<li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+						<li><a href="filmes.html" class="black-text"> FILMES </a></li>
+						<li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+						<li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+						<li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+					</ul>
+
+
+
+				</div>
+			</header>
+			
+			<!--las clases rows y col representan filas y columnas de el sistema de regilla de materialize estos son utilizados para hacer sitios rwd de manera mas eficaz-->
+	<!--el s representa dispositivos con tama;o peque;o el m de tama;o mediano el l de tama;o grande y los numeros al lado de ellos representa el ancho a ocupar
+	el numero 12 representa el total de el ancho de el documento por lo tanto 6 sera la mitad y 3 un cuarto a cada elemento se le asigna un numero dependiendo de lo que quiera que ocupe
+	tambien si un elemento ocupa 12 y otro 12 automaticamente el segundo elemento se acoplara justo debajo
+	-->
+			<section id="Contenido">
+				<br>
+				<br>
+				<div class="con formulario">
+					<div class="letrero">
+						<div class='row'>
+							<div class='col s12 center-align'>
+								<h2>Articulos</h2>
+							</div>
+
+
+						</div>
+
+					</div>
+				
+
+
+
+<!--LAs cartas son un componente de materialize que consta de 5 partes el 
+1-la clase carta que no es mas que el cuerpo de la carta con un conjunto de tributos  asignados por el css de materialize
+2-la clase card-image que es la imagen que tendra la carta para presentar el cual requiere una imagen en su innerhtml
+3-la clase card-title que es el titulo de la imagen en la cual se le agrego un background semitransparente para que no se mezcle con la imagen
+4-la clase card-content que es el contenido principal de la carta el cual requiere un texto digase un p a etc en su innerhtml
+5-la clase card-action el cual no es mas que un elace el cual se utilizo para linkear las paginas de articulos
+-->
+
+					<div class="row">
+							<div class="col s12 m6 l4">
+							  <div class="card">
+								<div class="card-image">
+								  <img src="imagenes/art1.jpg" style='height:270px;'>
+								  <span class="card-title" style='background-color: rgba(0, 0, 0, 0.295);font-size:21px;'>Mario Testino La realeza de la moda</span>
+								</div>
+								<div class="card-content">
+								  <p>Ser fotografiado por Mario Testino es un signo inequívoco de que lo has conseguido, de que ya eres famoso. Desde hace ya algunas décadas, Testino tiene el honor de ser el mejor y más exclusivo fotógrafo de moda y de celebridades. Tras dejar su Lima natal (Perú), Mario Testino se estableció en Londres, donde estudió fotografía.</p>
+								</div>
+								<div class="card-action">
+								  <a href="articulo1.html">Ver mas</a>
+								</div>
+							  </div>
+							</div>
+					
+
+
+						  
+				
+							<div class="col s12 m6 l4">
+							  <div class="card">
+								<div class="card-image">
+								  <img src="imagenes/art2.jpg" style='height:270px;'>
+								  <span class="card-title" style='background-color: rgba(0, 0, 0, 0.295);font-size:21px;'>Por qué Mario Testino siempre, siempre es una buena idea</span>
+								</div>
+								<div class="card-content">
+								  <p>Mario es el mejor fotógrafo del mundo y eso, que es algo que todo el que le gusta la moda sabe, quedó requeteconfirmado cuando Vogue España le entregó ese galardón en la tercera edición de Who's On Next. Aquella que sucedió en una noche de verano en la que Maria Ke Fisherman se alzaron ganadores y todos bailaron bajo la luna de junio, recién estrenado el estío. </p>
+							
+								</div>
+								<div class="card-action">
+								  <a href="articulo2.html">Ver mas</a>
+								</div>
+							  </div>
+							</div>
+						  
+
+
+							<div class="col s12 m6 l4">
+									<div class="card">
+									  <div class="card-image">
+										<img src="imagenes/art3.jpg" style='height:270px;'>
+										<span class="card-title" style='background-color: rgba(0, 0, 0, 0.295);font-size:21px;'>Mario Testino, más allá de la fama</span>
+									  </div>
+									  <div class="card-content">
+										<p>Hasta hace unos años el nombre de Mario Testino era sinónimo de fama. Las más famosas estrellas de cine posaban para él con absoluta confianza y el mundo contemplaba sus imágenes en las revistas en las que aparecían. No en vano fue autor de la transformación de la princesa Diana en aquella inolvidable sesión fotográfica de 1997. </p>
+								  
+									  </div>
+									  <div class="card-action">
+										<a href="articulo3.html">Ver mas</a>
+									  </div>
+									</div>
+								  </div>
+
+
+								  <div class="col s12 m6 l4">
+										<div class="card">
+										  <div class="card-image">
+											<img src="imagenes/art4.jpg" style='height:270px;'>
+											<span class="card-title" style='background-color: rgba(0, 0, 0, 0.295);font-size:21px;'>Mario Testino: un imprescindible</span>
+										  </div>
+										  <div class="card-content">
+											<p>lebra seis décadas de vida cuando su obra fotográfica se ha convertido en un testimonio exquisito de lo mejor de la moda contemporánea y un portafolio de celebridades icónicas de todas las esferas. Pero hay más; su punto de partida y regreso están en Latinoamérica... Hablamos de Mario Testino.</p> 
+									  
+										  </div>
+										  <div class="card-action">
+											<a href="articulo4.html">Ver mas</a>
+										  </div>
+										</div>
+									  </div>
+
+
+									 
+						</div>
+					
+					<!--
+		<section id="Contenpie">
+			<footer id="Pie">
+				<p class="papie">
+				© 2018 by LG ELECTRINICS
+				</p>
+				<p class="papie2">		
+				
+				</p>
+			</footer>
+		</section>
+		<br>
+		-->
+			</section>
+		</section>
+</body>
+
+</html>
+<script src='js/materialize.min.js'></script>
+<script>
+
+	document.addEventListener('DOMContentLoaded', function () {
+		var elems = document.querySelectorAll('.sidenav');
+		var instances = M.Sidenav.init(elems);
+	});
+
+</script>

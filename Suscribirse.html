@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mario Testino - Contacto</title>
+	<meta charset="UTF-8">
+	<link href="css/icon.css" rel="stylesheet" type="text/css">
+
+	<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<section id="Cuerpo">
+<section id="Contencabecera">
+		<header id="Cabecera" class="opacidad">
+	
+				<div>
+		
+						<nav>
+								<div class="nav-wrapper white">
+										<img src="imagenes/15.png" id="imLogo" style='width:215px;margin-left:2%;margin-top:18px;'>
+										 <!--  el sidenav trigger aparece solo cuando es una resolucion para dispositivos mobiles y material icons es una clase de iconos basados en fuentes-->
+								  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color:black;">menu</i></a>
+								  <ul class="right hide-on-med-and-down">
+									 <!--  cada li representa un elemento a presentar en el navbar y la clase black text de materialize pone la fuente en negro-->
+										<li ><a href="index.html" class="black-text"> INICIO	</a></li>
+										<li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+										<li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+										<li><a href="filmes.html" class="black-text"> FILMES </a></li>
+										<li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+										<li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+										<li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+								  </ul>
+								</div>
+							  </nav>
+							
+							  <ul class="sidenav" id="mobile-demo">
+								   <!--  cada li representa un elemento a presentar en el navbar cuando es mobil y la clase black text de materialize pone la fuente en negro-->
+								   <li ><a href="index.html" class="black-text"> INICIO	</a></li>
+								   <li><a href="historia.html" class="black-text"> BIOGRAF&Iacute;A 	</a></li>
+								   <li><a href="galeria.html" class="black-text"> GALER&Iacute;A	</a></li>
+								   <li><a href="filmes.html" class="black-text"> FILMES </a></li>
+								   <li><a href="articulos.html" class="black-text"> ART&Iacute;CULOS	</a></li>
+								   <li><a href="Suscribirse.html" class="black-text">Subscribete</a></li>
+								   <li><a href="contacto.html" class="black-text"> CONTACTO	</a></li>
+							  </ul>
+							
+		
+		
+				</div>
+			</header>
+
+			<!--las clases rows y col representan filas y columnas de el sistema de regilla de materialize estos son utilizados para hacer sitios rwd de manera mas eficaz-->
+	<!--el s representa dispositivos con tama;o peque;o el m de tama;o mediano el l de tama;o grande y los numeros al lado de ellos representa el ancho a ocupar
+	el numero 12 representa el total de el ancho de el documento por lo tanto 6 sera la mitad y 3 un cuarto a cada elemento se le asigna un numero dependiendo de lo que quiera que ocupe
+	tambien si un elemento ocupa 12 y otro 12 automaticamente el segundo elemento se acoplara justo debajo
+	-->
+
+
+	<!--la clase  input field es la que representa el componente de los estilos de materialize 
+	
+					  la clase  btn representa el boton normal de los estilos de materialize 
+					 la clase waves-effect representa el efecto de ola que se hace cuando se le hace click a la clase boton de materialize
+					 la clase  waves-light es un tema quewaves-effect se le aplica a la clase waves-effect para que se haga una ola mas clara
+	
+	-->
+			<div class='row'>
+					<div class='col s12 center-align'>
+						<h2>Subscribete</h2>
+					</div>
+
+
+
+					<div class="row">
+							<form class="col s12">
+							  <div class="row">
+								<div class="input-field col s12" style='width:70%;margin-left:15%;margin-right:15%;'>
+								  <input placeholder="Placeholder" id="campo1" type="text" class="validate">
+								  <label for="first_name">Nombre</label>
+								</div>
+								<div class="input-field col s12" style='width:70%;margin-left:15%;margin-right:15%;'>
+										<input id="campo2" type="text" class="validate">
+										<label for="last_name">Apellido</label>
+									  </div>
+									  <div class="input-field col s12" style='width:70%;margin-left:15%;margin-right:15%;'>
+											<input id="campo3" type="text" class="validate">
+											<label for="last_name">Correo</label>
+										  </div>
+										  <div class="input-field col s12" style='width:70%;margin-left:15%;margin-right:15%;'>
+												<input id="campo4" type="password" class="validate">
+												<label for="last_name">Contraseña</label>
+											  </div>
+											  <div class="input-field col s12" style='width:70%;margin-left:15%;margin-right:15%;'>
+													<input id="campo5" type="password" class="validate">
+													<label for="last_name">Confirmar contraseña</label>
+												  </div>
+                                                      <div class='col s12'>
+                                                <!--el evennto onclick ejecutara lo indicado en js -->
+															<a class="waves-effect waves-light btn black" id='boton1' onclick=' verificarymandar()'  style='width:30%;margin-left:35%;margin-right:35%;'>Enviar</a>
+													  </div>
+												 
+							  </div>
+							  
+							</form>
+						  </div>
+
+
+</body>
+</html>
+<script src='js/materialize.min.js'></script>
+<script>
+//////////////////se encarga de inicializar el componente de el menu hamburguer para que cuando se presione el boton salga el menu 
+//////////////////el evento domcontentloaded pasa cuando se cargan todos los elmentos dom instances es la instancia de el elemento sidenav ya inicializada
+//////////////////el metodo init inicializa el sidenav en ese elemento basicamente vincula el js de materialize con el html
+///////////////// el document.querry selectorall selecciona todas los elementos con ese nombre de clase
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+////////////////////se vincula el eemento dom con el texto correspondiente
+var texto1=document.getElementById("campo1");
+var texto2=document.getElementById("campo2");
+var texto3=document.getElementById("campo3");
+var texto4=document.getElementById("campo4");
+var texto5=document.getElementById("campo5");
+var boton1=document.getElementById("boton1");
+
+function verificarymandar(){
+var campo1lleno=false;
+var campo2lleno=false;
+var campo3lleno=false;
+var campo4lleno=false;
+var campo5lleno=false;
+////////////////////////se comprueban que los campos tengan una cantidad de caracteres adecuada
+if(texto1.value.toString().trim().length>5){
+campo1lleno=true;
+ 
+
+}
+else{
+		////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+	M.toast({html: 'El nombre debe contener almenos 5 caracteres'})
+	}
+if(texto2.value.toString().trim().length>5){
+
+	campo2lleno=true;
+	 
+
+}else{
+		////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+		M.toast({html: 'El apellido debe contener almenos 5 caracteres'})
+	}
+if(texto3.value.toString().trim().length>7){
+
+	campo3lleno=true;
+ 
+}
+else{
+		////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+	M.toast({html: 'El correo debe contener almenos 7 caracteres'})
+	}
+if(texto4.value.toString().trim().length>5){
+
+	campo4lleno=true;
+ 
+
+}else{
+	////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+		M.toast({html: 'La contraseña debe contener almenos 5 caracteres'})
+}
+if(texto5.value.toString().trim().length>5){
+
+	campo5lleno=true;
+
+	
+}else{
+		////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+M.toast({html: 'La contraseña debe contener almenos 5 caracteres'})
+	}
+
+if(campo1lleno==true && campo2lleno==true && campo3lleno==true && campo4lleno==true && campo5lleno==true   ){
+////////////M es el objeto de la instancia de los componentes de materialize y el metodo toast pide un objeto el cual debe contener un html 
+/////////// ese html es una string y representara el cuerpo de el toast que el toast no es mas que un mensaje que aparece en pantalla como son 
+////////////los que aparecen en android al pasar algo que deba ser notificado al usuario
+  M.toast({html: 'Subscripcion enviada'})
+  ///////////////////////se limpian los campos una vez se hayan introducido los datos correctamente
+  texto5.value="";
+  texto4.value="";
+  texto3.value="";
+  texto2.value="";
+  texto1.value="";
+}else{
+	M.toast({html: 'Por favor llene todos los campos!!'})
+
+}
+///boton1.addEventListener("click", verificarymandar)
+	
+}
+
+
+</script>
